@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent (typeof (Jump))]
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(Gravity))]
+[RequireComponent(typeof(Animator))]
 public class Player : MonoBehaviour {
     private Gravity _gravity;
     private PlayerMovement _playerMovement;

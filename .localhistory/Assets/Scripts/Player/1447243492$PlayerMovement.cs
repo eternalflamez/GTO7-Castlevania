@@ -29,23 +29,6 @@ public class PlayerMovement : MonoBehaviour {
         private set { }
     }
 
-    public bool Running
-    {
-        get { return _running; }
-        private set { }
-    }
-
-    public float RunSpeed
-    {
-        get { return _runSpeed; }
-        private set { }
-    }
-    public float WalkSpeed
-    {
-        get { return _walkSpeed; }
-        private set { }
-    }
-
 	// Use this for initialization
 	void Start () {
         _doubleTapTimer = 0;

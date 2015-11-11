@@ -76,8 +76,8 @@ public class Gravity : MonoBehaviour {
             }
         }
 
-        RaycastHit2D checkIfFallingLeft = Physics2D.Raycast(raycastStart + (Vector3.left * (width - 0.1f)), -Vector2.up, .1f);
-        RaycastHit2D checkIfFallingRight = Physics2D.Raycast(raycastStart + (Vector3.right * (width - 0.1f)), -Vector2.up, .1f);
+        RaycastHit2D checkIfFallingLeft = Physics2D.Raycast(raycastStart + (Vector3.left * width), -Vector2.up, .1f);
+        RaycastHit2D checkIfFallingRight = Physics2D.Raycast(raycastStart + (Vector3.right * width), -Vector2.up, .1f);
         if (checkIfFallingLeft.collider == null && checkIfFallingRight.collider == null)
         {
             _falling = true;

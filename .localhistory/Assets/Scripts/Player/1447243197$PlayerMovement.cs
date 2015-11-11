@@ -23,29 +23,6 @@ public class PlayerMovement : MonoBehaviour {
     private bool _tapped;
     private bool _running;
 
-    public bool Moving
-    {
-        get { return Pressed(_leftButton) || Pressed(_rightButton); }
-        private set { }
-    }
-
-    public bool Running
-    {
-        get { return _running; }
-        private set { }
-    }
-
-    public float RunSpeed
-    {
-        get { return _runSpeed; }
-        private set { }
-    }
-    public float WalkSpeed
-    {
-        get { return _walkSpeed; }
-        private set { }
-    }
-
 	// Use this for initialization
 	void Start () {
         _doubleTapTimer = 0;

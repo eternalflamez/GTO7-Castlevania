@@ -5,20 +5,22 @@ using System.Collections;
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(Gravity))]
 public class Player : MonoBehaviour {
+    [SerializeField]
+    private Animator _animator;
+    [SerializeField]
     private Gravity _gravity;
+    [SerializeField]
     private PlayerMovement _playerMovement;
+    [SerializeField]
     private Jump _jump;
 
 	// Use this for initialization
 	void Start () {
-        _gravity = GetComponent<Gravity>();
-        _playerMovement = GetComponent<PlayerMovement>();
-        _jump = GetComponent<Jump>();
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
 }

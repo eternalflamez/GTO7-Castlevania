@@ -14,11 +14,12 @@ public class Player : MonoBehaviour {
         _gravity = GetComponent<Gravity>();
         _playerMovement = GetComponent<PlayerMovement>();
         _jump = GetComponent<Jump>();
+
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
 }

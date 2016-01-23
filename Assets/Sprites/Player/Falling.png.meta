@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: bdefa2ad0fb4fc249924f4d49dab0f05
+timeCreated: 1449566616
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Falling_0
+    21300002: Falling_1
+    21300004: Falling_2
+    21300006: Falling_3
+    21300008: Falling_4
+    21300010: Falling_5
+    21300012: Falling_6
+    21300014: Falling_7
+    21300016: Falling_8
+    21300018: Falling_9
+    21300020: Falling_10
+    21300022: Falling_11
+    21300024: Falling_12
+    21300026: Falling_13
+    21300028: Falling_14
+    21300030: Falling_15
+    21300032: Falling_16
+    21300034: Falling_17
+    21300036: Falling_18
+    21300038: Falling_19
+    21300040: Falling_20
+    21300042: Falling_21
+    21300044: Falling_22
+    21300046: Falling_23
+    21300048: Falling_24
+    21300050: Falling_25
+    21300052: Falling_26
+    21300054: Falling_27
+    21300056: Falling_28
+    21300058: Falling_29
+    21300060: Falling_30
+    21300062: Falling_31
+    21300064: Falling_32
+    21300066: Falling_33
+    21300068: Falling_34
+    21300070: Falling_35
+    21300072: Falling_36
+    21300074: Falling_37
+    21300076: Falling_38
+    21300078: Falling_39
+    21300080: Falling_40
+    21300082: Falling_41
+    21300084: Falling_42
+    21300086: Falling_43
+    21300088: Falling_44
+    21300090: Falling_45
+    21300092: Falling_46
+    21300094: Falling_47
+    21300096: Falling_48
+    21300098: Falling_49
+    21300100: Falling_50
+    21300102: Falling_51
+    21300104: Falling_52
+    21300106: Falling_53
+    21300108: Falling_54
+    21300110: Falling_55
+    21300112: Falling_56
+    21300114: Falling_57
+    21300116: Falling_58
+    21300118: Falling_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Falling_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_3
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 2430
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_9
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 2160
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_15
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_16
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_17
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1890
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_19
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_21
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_23
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1620
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_25
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_26
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_27
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_28
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_29
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1350
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_31
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_32
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_33
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_34
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_35
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1080
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_37
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_39
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_40
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_41
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 810
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_43
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_44
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_45
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_46
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_47
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 540
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_49
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_50
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_51
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_52
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_53
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 270
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_55
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_56
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_57
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_58
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Falling_59
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 164
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

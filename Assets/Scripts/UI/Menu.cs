@@ -42,6 +42,8 @@ public class Menu : MonoBehaviour {
         PlayerPrefs.SetFloat("PlayerPosX", 5.4f);
         PlayerPrefs.SetFloat("PlayerPosY", 2.7f);
 
+        PlayerPrefs.SetInt("PlayerHealth", 100);
+
         PlayerPrefs.Save();
 
         SceneManager.LoadScene("Game");

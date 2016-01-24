@@ -4,14 +4,17 @@ using System.Collections;
 
 [RequireComponent(typeof(Animator))]
 public class Skeleton : MonoBehaviour {
-
+    
     [SerializeField]
     private float attackDistance;
     private GameObject player;
     [SerializeField]
     private GameObject bone;
+    [SerializeField]
+    private GameObject boneParent;
     private FSMSystem fsmSystem;
     private Animator animator;
+    private int health;
 
     private bool visible;
 
@@ -85,7 +88,7 @@ public class Skeleton : MonoBehaviour {
         Bone bone = Instantiate(this.bone).GetComponent<Bone>();
         bone.Target = player.transform;
         bone.transform.position = this.transform.position;
-
+        bone.transform.SetParent(boneParent.transform);
         bone.Fly();
 
     }
@@ -96,7 +99,17 @@ public class Skeleton : MonoBehaviour {
         SetTransition(Transition.StopJump);
     }
 
-    public void Die()
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
     {
         Destroy(this.gameObject);
     }

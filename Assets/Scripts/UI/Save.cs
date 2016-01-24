@@ -8,6 +8,7 @@ public class Save : MonoBehaviour {
     private string savename;
     private int seedValue;
     private Vector2 playerPosition;
+    private int health;
 	
     [SerializeField]
     private Text savenameText;
@@ -27,12 +28,13 @@ public class Save : MonoBehaviour {
 
     private int saveNumber;
 
-    public void SetSaveValues(int saveNumber, string name, int seed, Vector2 position, bool save)
+    public void SetSaveValues(int saveNumber, string name, int seed, Vector2 position, bool save, int health)
     {
         this.savename = name;
         this.seedValue = seed;
         this.playerPosition = position;
         this.saveNumber = saveNumber;
+        this.health = health;
 
         savenameText.text = savename;
         seedValueText.text = seedValue.ToString();
@@ -60,6 +62,7 @@ public class Save : MonoBehaviour {
         PlayerPrefs.SetInt("CurrentSeed", seedValue);
         PlayerPrefs.SetFloat("PlayerPosX", playerPosition.x);
         PlayerPrefs.SetFloat("PlayerPosY", playerPosition.y);
+        PlayerPrefs.SetInt("PlayerHealth", health);
 
         PlayerPrefs.Save();
 
@@ -82,6 +85,7 @@ public class Save : MonoBehaviour {
             Vector2 position = FindObjectOfType<PlatformerCharacter2D>().transform.position;
             PlayerPrefs.SetFloat("save" + saveNumber + "x", position.x);
             PlayerPrefs.SetFloat("save" + saveNumber + "y", position.y);
+            PlayerPrefs.SetInt("save" + saveNumber + "health", PlayerHealth.instance.Health);
 
             savenameText.text = input.text;
             seedValueText.text = seed.ToString();

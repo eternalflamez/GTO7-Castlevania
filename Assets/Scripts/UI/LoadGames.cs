@@ -18,17 +18,18 @@ public class LoadGames : MonoBehaviour {
             int seed = PlayerPrefs.GetInt("save" + i + "seed");
             float x = PlayerPrefs.GetFloat("save" + i + "x");
             float y = PlayerPrefs.GetFloat("save" + i + "y");
+            int hp = PlayerPrefs.GetInt("save" + i + "health");
 
             if (name == "")
             {
                 name = "Empty save";
             }
 
-            saves[i].SetSaveValues(i, name, seed, new Vector2(x, y), !loader);
+            saves[i].SetSaveValues(i, name, seed, new Vector2(x, y), !loader, hp);
 
             if (loader)
             {
-                if (seed != 0) // What if seed is 0? 1 in million chance tho
+                if (hp != 0) 
                 {
                     saves[i].Unlock();
                 }

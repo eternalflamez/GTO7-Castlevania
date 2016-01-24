@@ -15,8 +15,6 @@ public class SkeletonDie : FSMState
     {
         animator.SetBool("Attacking", false);
         animator.SetBool("Jumping", false);
-
-        npc.GetComponent<Skeleton>().Die();
     }
 
     public override void Reason(GameObject npc)

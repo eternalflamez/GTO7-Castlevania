@@ -22,6 +22,9 @@ public class PlatformerCharacter2D : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;
 
+    private float standStillTimer;
+    private bool healing = false;
+
     private void Awake()
     {
         // Setting up references.
@@ -34,6 +37,27 @@ public class PlatformerCharacter2D : MonoBehaviour
 
     private void Update()
     {
+        if(Mathf.Approximately(m_Anim.GetFloat("Speed"), 0))
+        {
+            standStillTimer += Time.deltaTime;
+
+            if(healing && standStillTimer > 1)
+            {
+                DamageUIManager.instance.CreateDamageNumber(1, transform.position + new Vector3(0, .5f), true, true);
+                standStillTimer = 0;
+            }
+
+            if(standStillTimer > 3)
+            {
+                healing = true;
+                standStillTimer = 0;
+            }
+        }
+        else
+        {
+            standStillTimer = 0;
+            healing = false;
+        }
     }
 
     private void FixedUpdate()
@@ -48,6 +72,7 @@ public class PlatformerCharacter2D : MonoBehaviour
         }
         m_Anim.SetBool("Ground", m_Grounded);
         m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+        m_Anim.SetBool("Damaged", false);
     }
 
     public void Attack()
@@ -97,6 +122,18 @@ public class PlatformerCharacter2D : MonoBehaviour
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
+    }
+
+    public void TakeDamage()
+    {
+        m_Anim.SetBool("Damaged", true);
+        healing = false;
+        standStillTimer = 0;
+    }
+
+    public void HitEnemies()
+    {
+        // TODO: Detect enemies in front of me and hit those
     }
 
     private void Flip()

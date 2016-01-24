@@ -69,4 +69,14 @@ public class Bone : MonoBehaviour {
 
         done = true;
     }  
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlatformerCharacter2D>().TakeDamage();
+            DamageUIManager.instance.CreateDamageNumber(1, other.contacts[0].point, true);
+            Destroy(this.gameObject);
+        }
+    }
 }

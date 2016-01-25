@@ -8,6 +8,8 @@ public class Generator : MonoBehaviour
     private Block startBlock;
     [SerializeField]
     private List<GameObject> blockObjects;
+    [SerializeField]
+    private List<GameObject> enemies;
     private List<Vector2> takenPositions;
 
     private List<Block> blocks;
@@ -15,7 +17,12 @@ public class Generator : MonoBehaviour
     private bool done = false;
     private List<OpenPosition> openPositions;
 
-    public int seed;
+    private int seed;
+
+    public int Seed
+    {
+        get { return seed; }
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +47,7 @@ public class Generator : MonoBehaviour
         }
 
         int blockCounter = 0;
+        int blocksPlacedWithoutMonsters = 1;
 
 	    while(!done)
         {
@@ -90,6 +98,38 @@ public class Generator : MonoBehaviour
 
                     ClosePosition(openPositions[j].position, block.Size, openPositions[j].openSide);
 
+                    List<Vector3> monsterPositions = new List<Vector3>();
+                    for (int i = 0; i < block.AllowedMonsterLocations.Length; i++)
+                    {
+                        monsterPositions.Add(block.AllowedMonsterLocations[i] + go.transform.position);
+                    }
+                    
+                    bool placedMonster = false;
+
+                    for (int i = 0; i < monsterPositions.Count; i++)
+                    {
+                        if (Random.Range(0, 100) < Mathf.Pow(2.5f, blocksPlacedWithoutMonsters))
+                        {
+                            int monsterPosition = Random.Range(0, monsterPositions.Count);
+                            Vector3 monsterLocation = monsterPositions[monsterPosition];
+                            
+                            GameObject monster = enemies[Random.Range(0, enemies.Count)];
+                            monsterLocation.y += monster.GetComponent<Enemy>().GetYOffset();
+                            monster = Instantiate(monster);
+                            monster.transform.position = monsterLocation;
+                            monster.transform.SetParent(go.transform);
+
+                            placedMonster = true;
+                        }
+                    }
+
+                    if(placedMonster)
+                    {
+                        blocksPlacedWithoutMonsters = 0;
+                    }
+
+                    blocksPlacedWithoutMonsters++;
+
                     placedBlock = true;
                     break; // Because we just removed things from openPositions and that might cause nasty effects if we continue this loop.
                 }
@@ -103,6 +143,11 @@ public class Generator : MonoBehaviour
             }
         }
 	}
+
+    void OnLevelWasLoaded(int level)
+    {
+        Time.timeScale = 1;
+    }
 	
     private bool IsPositionAvailable(Vector2 position, Vector2 size)
     {

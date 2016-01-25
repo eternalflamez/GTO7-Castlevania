@@ -12,6 +12,8 @@ public class Block : MonoBehaviour
     private Vector2 size;
     [SerializeField]
     private SidePosition[] sidePositions;
+    [SerializeField]
+    private Vector3[] allowedMonsterLocation;
     
     private Side lastRequestedSide;
 
@@ -33,6 +35,19 @@ public class Block : MonoBehaviour
     public float WeightAddition
     {
         get { return weightAddition; }
+    }
+
+    public Vector3[] AllowedMonsterLocations
+    {
+        get { return allowedMonsterLocation; }
+    }
+
+    public Block()
+    {
+        if(allowedMonsterLocation == null)
+        {
+            allowedMonsterLocation = new Vector3[0];
+        }
     }
 
     public bool AllowSide(Side side)

@@ -133,7 +133,23 @@ public class PlatformerCharacter2D : MonoBehaviour
 
     public void HitEnemies()
     {
-        // TODO: Detect enemies in front of me and hit those
+        int damage = 10;
+        int range = 3;
+        Vector2 direction = Vector2.right;
+
+        if(!m_FacingRight)
+        {
+            direction = -direction;
+        }
+
+        LayerMask mask = LayerMask.GetMask("Enemy");
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, range, mask);
+        if(hit.collider != null)
+        {
+            hit.transform.GetComponent<Enemy>().TakeDamage(damage);
+            DamageUIManager.instance.CreateDamageNumber(damage, hit.point);
+        }
     }
 
     private void Flip()

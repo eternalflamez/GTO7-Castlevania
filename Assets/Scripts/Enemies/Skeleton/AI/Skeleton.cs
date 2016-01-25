@@ -1,26 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-[RequireComponent(typeof(Animator))]
-public class Skeleton : MonoBehaviour {
+public class Skeleton : Enemy {
     
     [SerializeField]
     private float attackDistance;
     private GameObject player;
     [SerializeField]
     private GameObject bone;
-    [SerializeField]
     private GameObject boneParent;
     private FSMSystem fsmSystem;
     private Animator animator;
+    [SerializeField]
     private int health;
+    [SerializeField]
+    private float yOffset;
 
     private bool visible;
 
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<PlatformerCharacter2D>().gameObject;
+        boneParent = GameObject.FindWithTag("Container");
         animator = GetComponent<Animator>();
 
         fsmSystem = new FSMSystem();
@@ -90,7 +91,11 @@ public class Skeleton : MonoBehaviour {
         bone.transform.position = this.transform.position;
         bone.transform.SetParent(boneParent.transform);
         bone.Fly();
+    }
 
+    public override float GetYOffset()
+    {
+        return yOffset;
     }
 
     public void StopJump()
@@ -99,7 +104,7 @@ public class Skeleton : MonoBehaviour {
         SetTransition(Transition.StopJump);
     }
 
-    public void TakeDamage(int amount)
+    public override void TakeDamage(int amount)
     {
         health -= amount;
 
@@ -109,7 +114,7 @@ public class Skeleton : MonoBehaviour {
         }
     }
 
-    private void Die()
+    protected override void Die()
     {
         Destroy(this.gameObject);
     }

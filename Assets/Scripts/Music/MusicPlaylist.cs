@@ -31,9 +31,6 @@ public class MusicPlaylist : MonoBehaviour
 
     void Start()
     {
-        // Have playlist persist across scenes.
-        DontDestroyOnLoad(gameObject); // Don't destroy this object
-
         // When a new scene is loaded, destroy the other playlists.
         foreach (MusicPlaylist playlist in GameObject.FindObjectsOfType<MusicPlaylist>())
         {

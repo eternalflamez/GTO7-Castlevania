@@ -94,6 +94,7 @@ MonoBehaviour:
   Target: {fileID: 0}
   firingAngle: 45
   gravity: 24
+  damage: 5
 --- !u!212 &21219034
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -151,6 +152,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+    - target: {fileID: 0}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130324}

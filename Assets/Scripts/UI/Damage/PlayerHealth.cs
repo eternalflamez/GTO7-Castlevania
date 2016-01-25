@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerHealth : Singleton<PlayerHealth> {
     [SerializeField]
-    private AudioClip deathMusic;
+    private MusicPlaylist deathMusic;
     [SerializeField]
     private GameObject deathHolder;
     private int health;
@@ -36,9 +36,11 @@ public class PlayerHealth : Singleton<PlayerHealth> {
         {
             deathHolder.SetActive(true);
             dead = true;
-            delta = health; 
-            MusicManager.Instance.PlaySong(deathMusic);
+            delta = health;
+            MusicManager.Instance.ChangePlaylist(deathMusic);
             MusicManager.Instance.Repeat = RepeatMode.None;
+            MusicManager.Instance.Shuffle = false;
+            
         }
 
         if (health + delta > 100)

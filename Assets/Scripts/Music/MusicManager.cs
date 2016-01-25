@@ -48,7 +48,6 @@ public class MusicManager : MonoBehaviour
         // If there is no instance of this class, set it.
         if (Instance == null)
         {
-            DontDestroyOnLoad(gameObject); // Don't destroy this object
             Instance = this;
         }
         else
@@ -74,6 +73,12 @@ public class MusicManager : MonoBehaviour
 
         if (PlayOnAwake)
             Play();
+    }
+
+    public void Destroy()
+    {
+        Destroy(Playlist.gameObject);
+        Destroy(this.gameObject);
     }
 
     public void Play()
@@ -163,7 +168,7 @@ public class MusicManager : MonoBehaviour
             else if (Shuffle)
             {
                 int newTrack = GetNewTrack();
-                while (newTrack == _counter)
+                while (newTrack == _counter && _counter + 1 != Playlist.MusicList.Length)
                 {
                     newTrack = GetNewTrack();
                 }

@@ -66,7 +66,7 @@ public class Save : MonoBehaviour {
 
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(2);
     }
 
     public void SaveGame()
@@ -78,7 +78,7 @@ public class Save : MonoBehaviour {
                 input.text = " ";
             }
 
-            int seed = FindObjectOfType<Generator>().seed;
+            int seed = FindObjectOfType<Generator>().Seed;
 
             PlayerPrefs.SetString("save" + saveNumber + "name", input.text);
             PlayerPrefs.SetInt("save" + saveNumber + "seed", seed);

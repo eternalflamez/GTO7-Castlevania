@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11470236}
   - 61: {fileID: 6173462}
   - 58: {fileID: 5842136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Skelly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: -0.2, y: 0.4}
   serializedVersion: 2
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: -0.1, y: -0.7}
   serializedVersion: 2
@@ -90,7 +90,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDistance: 7.5
   bone: {fileID: 130324, guid: d16ea3b8643b77c4e9113f1e0872b1e6, type: 2}
-  boneParent: {fileID: 0}
+  health: 15
+  yOffset: 1.43
 --- !u!212 &21213864
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,6 +136,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: attackDistance
       value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: yOffset
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

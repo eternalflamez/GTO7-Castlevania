@@ -6,6 +6,7 @@ public class Bone : MonoBehaviour {
 	public Transform Target;
     public float firingAngle = 45.0f;
     public float gravity = 9.8f;
+    public int damage;
 
     private Vector3 lastVector;
     private bool done;
@@ -75,7 +76,7 @@ public class Bone : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlatformerCharacter2D>().TakeDamage();
-            DamageUIManager.instance.CreateDamageNumber(1, other.contacts[0].point, true);
+            DamageUIManager.instance.CreateDamageNumber(damage, other.contacts[0].point, true);
             Destroy(this.gameObject);
         }
     }

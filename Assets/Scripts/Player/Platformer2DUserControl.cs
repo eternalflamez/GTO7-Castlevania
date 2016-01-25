@@ -17,34 +17,7 @@ public class Platformer2DUserControl : MonoBehaviour
 
     private void Update()
     {
-        #if UNITY_ANDROID
-        // For android only
-        if (!m_Jump)
-        {
-            if (Input.touchCount == 2)
-            {
-                if ((Input.touches[0].position.x < Screen.width / 4 && Input.touches[1].position.x > Screen.width * 0.75)
-                    || (Input.touches[1].position.x < Screen.width / 4 && Input.touches[2].position.x > Screen.width * 0.75))
-                {
-                    m_Jump = true;
-                }
-            }
-        }
-
-        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            m_Character.Attack();
-        }
-        else
-        {
-            m_Character.NoAttack();
-        }
-
-        // Read the inputs.
-        m_Crouch = Input.GetAxis("Vertical") < 0;
-        m_H = Input.GetAxis("Horizontal");
-
-        #else
+#if !UNITY_ANDROID
         // For pc only, crossplatforminputmanager my butthole.
         if (!m_Jump)
         {
@@ -64,14 +37,15 @@ public class Platformer2DUserControl : MonoBehaviour
         // Read the inputs.
         m_Crouch = CrossPlatformInputManager.GetAxis("Vertical") < 0;
         m_H = CrossPlatformInputManager.GetAxis("Horizontal");
-        #endif
+#endif
     }
-
 
     private void FixedUpdate()
     {
+#if !UNITY_ANDROID
         // Pass all parameters to the character control script.
         m_Character.Move(m_H, m_Crouch, m_Jump);
         m_Jump = false;
+#endif
     }
 }
